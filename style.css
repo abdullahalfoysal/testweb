@@ -1,0 +1,265 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.clear::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.left{
+    float: left;
+}
+.right{
+    float: right;
+}
+.img{
+    max-width: 100%;
+
+}
+.a{
+    text-decoration: none;
+}
+.mid-content{
+    max-width: 1200px;
+    margin: auto;
+}
+/* main css*/
+.header-section {
+    background: #fff;
+    color: black;
+    position: fixed;
+    top: 0%;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+}
+.header-logo {
+    width: 20%;
+}
+
+.header-logo img {
+    max-width: 100%;
+    height: 73px;
+    margin-top: 7px;
+    border-radius: 2px 31px;
+    box-shadow: 5px 6px 20px -4px;
+}
+
+.header-menu{
+    width: 60%;
+}
+
+.primary-menu{}
+
+.primary-menu ul{}
+.primary-menu ul li{
+    display: inline-block;
+    border: px solid #fff;
+    
+
+}
+.primary-menu ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 17px 45px;
+    font-size: 22px;
+    line-height: 51px;
+    color: #060606;
+}
+.primary-menu ul li a:hover {
+    background: rgb(11 145 241 / 48%);
+    border-radius: 5px 39px;
+}
+/* Primary dropdown*/
+.primary-menu ul li{
+    position: relative;
+}
+.primary-menu ul li ul{
+    position: absolute;
+    background:  #00b9ffc7;
+    color: #fff;
+    
+
+    opacity: 0;
+    visibility: hidden;
+    transform: scaleY(0);
+    transition: .4s;
+
+    transform-origin: top center;
+    
+}
+.primary-menu ul li ul li{
+    display: block;
+}
+.primary-menu ul li ul li a{
+    display: block;
+    color: #ddd;
+
+    
+}
+.primary-menu ul li:hover ul{
+    display:inline block;
+    
+    opacity: 1;
+    visibility:visible;
+    transform: scaleY(1);
+
+}
+.primary-menu ul li:hover ul li a:hover{
+    background:  rgba(11, 145, 241, 0.888);
+         
+}
+
+
+.header-button{
+    width: 20%;
+}
+
+.header-btn{
+    text-decoration: none;
+}
+.header-button a {
+    line-height: 75px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #2665c1;
+    padding: 7px 21px;
+    border-radius: 3px 22px;
+    background: #00c4ffc4;
+}
+.header-button a:hover {
+    background: #1574d5;
+    color: #fff;
+}
+/* photograph section*/
+
+.photograph-section{
+    background: #fff;
+}
+
+.p-caption{}
+.p-caption h3 {
+    font-size: 25px;
+    margin-top: 86px;
+}
+.p-caption h2 {
+    font-size: 60px;
+    margin-top: 25px;
+    font-weight: 600;
+    line-height: 1.5em;
+    display: inline-block;
+    padding: 1px 80px 1px 80px;
+    background: #ff000047;
+    border-radius: 0px 40px;
+}
+.p-caption h2:hover {
+    background: #ff0000db;
+    color: #fff;
+}
+
+.main-part{
+    width: 39%;
+}
+.main-part {
+    box-shadow: 14px 13px 52px 16px rgba(8, 144, 242, 0.851);
+    margin-bottom: 60px;
+    padding: 60px;
+    margin-top: 100px;
+    border-radius: 5px 100px;
+    transition: .2s;
+}
+.main-part:hover {
+    background: #00b9ffc7;
+    color: #fff;
+}
+.main-part ol li{
+    
+}
+
+.part-no1 {
+    box-shadow: 0px 0px 18px 3px;
+    border-radius: 5px 40px;
+    padding: 19px;
+}
+.part-no1 h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.main-part:hover .part-no1:hover {
+    background: rgb(15 110 208 / 81%);
+}
+.point-mainu{}
+.point-mainu h4 {
+    font-size: 20px;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    font-weight: 300;
+}
+
+.part-no2 {
+    box-shadow: 0px 0px 18px 3px;
+    border-radius: 5px 40px;
+    padding: 19px;
+    margin-top: 60px;
+}
+.part-no2 h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    margin-top: 25px;
+}
+.part-no2 p{}
+
+.main-part:hover .part-no2:hover{
+    background: rgba(140, 15, 208, 0.744);
+}
+/* banner section */
+
+.banner-section {
+    background: url(/img/download.jpg) no-repeat center;
+    background-size: cover;
+    padding: 150px 0;
+    color: #fff;
+    margin-bottom: 80px;
+
+    
+    z-index: -1;
+}
+.banner-section img{
+    max-width: 100%;
+}
+/* form section*/
+
+.form-section{
+    background: #ddd;
+}
+
+.form-item{
+    font-size: 20px;
+}
+
+.f-items{}
+
+input {
+    padding: 21px 100px;
+    margin-bottom: 15px;
+    box-shadow: 8px 10px 15px -1px #50c4ff8a;
+    border-radius: 5px 30px;
+}
+input:hover{
+    background: rgba(11, 135, 237, 0.19);
+    color: rgb(8, 8, 8);
+    
+
+}
